@@ -112,7 +112,7 @@ const DiceRoll = () => {
      if (die1 && die2 === 1) {
          return <h1>SNAKE EYES</h1>
      } else if (die1 && die2 !== 1){
-         return die1 + die2;
+         return <h1>{die1} & {die2}</h1>;
      }
 
 }
