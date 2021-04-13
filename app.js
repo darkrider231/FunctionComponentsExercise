@@ -108,6 +108,12 @@ const DiceRoll = () => {
      const die1 = Math.floor(Math.random() * 6) + 1;
      // 8c
      const die2 = Math.floor(Math.random() * 6) + 1;
+
+     /*
+     roll = () => Math.floor(Math.random() * 6) + 1;
+     const die1 = roll();
+     const die2 = roll();
+     */
      const total = die1 + die2;
      // 8d
      if (die1 && die2 === 1) {
