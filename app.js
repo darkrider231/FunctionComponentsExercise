@@ -73,7 +73,7 @@ const GrinchVmail = () => {
     // 6c
     return <div>
         <h1>IF {u.toUpperCase()} UTTER SO MUCH AS ONE SYLLABLE, I'LL HUNT  {u.toUpperCase()} DOWN AND GUT {u.toUpperCase()}  LIKE A FISH! </h1>
-        <h3>If {u}'d like to fax me, press the star key</h3>
+        <h3>If {u.toLowerCase()}'d like to fax me, press the star key</h3>
         </div>
 }
 
@@ -109,10 +109,9 @@ const DiceRoll = () => {
      // 8c
      const die2 = Math.floor(Math.random() * 6) + 1;
      const total = die1 + die2;
-     const snakeEyes = 1+1;
      // 8d
      if (die1 && die2 === 1) {
-         return <h1>SNAKE EYES = {snakeEyes}</h1>
+         return <h1>SNAKE EYES</h1>
      } else if (die1 && die2 !== 1){
          return <h1>{die1} & {die2} = {total}</h1>;
             
