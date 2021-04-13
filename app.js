@@ -108,11 +108,14 @@ const DiceRoll = () => {
      const die1 = Math.floor(Math.random() * 6) + 1;
      // 8c
      const die2 = Math.floor(Math.random() * 6) + 1;
+     const total = die1 + die2;
+     const snakeEyes = 1+1;
      // 8d
      if (die1 && die2 === 1) {
-         return <h1>SNAKE EYES</h1>
+         return <h1>SNAKE EYES = {snakeEyes}</h1>
      } else if (die1 && die2 !== 1){
-         return <h1>{die1} & {die2}</h1>;
+         return <h1>{die1} & {die2} = {total}</h1>;
+            
      }
 
 }
